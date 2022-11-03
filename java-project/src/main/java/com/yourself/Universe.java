@@ -5,13 +5,18 @@ import java.util.Arrays;
 
 public class Universe {
 // }
-
+/*
 public static int countAllStars(int... galaxies) {
 	int totalStars = 0;
 	for(int stars : galaxies) {
-		totalStars = stars; // fix me!
+		totalStars += stars; // fix me!
 	} 
 	return totalStars;
+}
+*/
+
+public static int countAllStars(int... galaxies) {
+	return Arrays.stream(galaxies).sum();
 }
 
 //{ autofold
